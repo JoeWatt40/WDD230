@@ -31,7 +31,17 @@
 
 <footer>
   <h5>@2020 | Joseph Watt | Nevada |<a href="www.byui.edu">BYUI Online Learning</a></h5>
+  <p id="time">Last Modified:</p>
 </footer>
+
+<script>
+
+  function modifyTime() {
+    var t = new Date(document.lastModified);
+    document.getElementById("time").innerHTML = t;
+  }
+
+</script>
 
 </body>
 </html> 
