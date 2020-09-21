@@ -6,22 +6,26 @@ h2 {
     text-align: left;
 }
 
+header img {
+    float: right;
+}
+
 header {
     margin: auto;
     border: 5px solid black;
     border-radius: 25px;
-    width: 400px;
+    width: 450px;
     background-color: lightgrey;
 }
 
 .center {
     margin: auto;
-    width: 400px;
+    width: 450px;
 }
 
 footer {
     margin: auto;
-    width: 400px;
+    width: 450px;
     text-align: center;
     border: 2px solid black;
     border-radius: 25px;
