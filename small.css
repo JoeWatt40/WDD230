@@ -5,28 +5,42 @@ body {
 
 header {
     text-align: center;
-    margin: auto;
-    width: 800px;
     padding: 20px;
-    background-color: lightblue;
     border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto;
+
 }
 
-.first, .second,  .third {
-    background-color:lightblue;
-    margin: auto;
-    width: 700px;
-    height: 600px;
+.first, .second, .third{
+    display: grid;
+    grid-template-columns: auto;
     border-radius: 5px;
+    background-color: lightblue;
+    width: 95%;
 }
 
 .first img, .second img, .third img{
-    float: right;
     padding: 5px;
+    width: 90%;
 }
 
 .first p, .second p, .third p, h2, a{
     padding: 5px;
     text-align: left;
     font-size:1.5em;
+}
+
+@media only screen and (min-width: 650px){
+    .columns {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .columns {
+        display: grid;
+        grid-template-columns: auto auto auto
+    }
 }
