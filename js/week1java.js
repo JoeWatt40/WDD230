@@ -1,4 +1,2 @@
-function modifyTime() {
-    var t = new Date(document.lastModified);
-    document.getElementById("time").innerHTML = t;
-  }
+document.getElementById("date").innerHTML = "This was last modified on: " + document.lastModified;
+document.getElementById("year").innerHTML = new Date().getFullYear();
