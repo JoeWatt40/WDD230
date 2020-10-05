@@ -8,8 +8,15 @@ header {
     justify-content: space-evenly;
 }
 
-#drop {
-    display: none;
+.menu, ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu li {
+    display: flex;
+    padding: 10px;
+    display: block;
 }
 
 h1, h2 {
@@ -21,24 +28,20 @@ h2 {
 }
 
 footer {
-    margin: auto;
-    width: 800px;
-    text-align: center;
-    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;  
 }
 
 @media only screen and (min-width: 37.5em){
-    #drop {
-        display: flex;
-        justify-content: space-evenly;
+    .menu li{
+        display: inline;
+        padding: 25px;
     }
 
-    button {
-        display: none;
-    }
 }
 
-@media only screen and (min-width: 60em){
-    
+@media only screen and (min-width: 75em){    
+    .menu li {
+        padding: 100px;
+    }    
 }
-
