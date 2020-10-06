@@ -1,0 +1,8 @@
+/* large css for lesson 2 */
+
+@media only screen and (min-width: 75em){
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
