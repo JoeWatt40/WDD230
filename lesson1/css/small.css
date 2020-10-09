@@ -1,0 +1,55 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Peddana', serif;
+font-family: 'Poppins', sans-serif; */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+header {
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 25px;
+    width: 800px;
+    background-color: lightgrey;
+}
+
+.center {
+    margin: auto;
+    width: 800px;
+}
+
+.center h2 {
+    border-bottom: 2px solid black;
+    width: 775px;
+}
+
+footer {
+    margin: auto;
+    width: 800px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: lightgrey;
+}
+
+footer a, #year {
+    display: inline-block;
+    padding-top: 5px;    
+}
