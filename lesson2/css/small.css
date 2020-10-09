@@ -16,10 +16,10 @@ h1 {
 }
 
 .card {
-    border-radius: 5px;
+    background-color: lightgrey;
 }
 
-h2, a{
+h3, a{
     padding: 5px;
     font-style: italic;
 }
