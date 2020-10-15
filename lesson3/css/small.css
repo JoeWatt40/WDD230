@@ -1,47 +1,60 @@
+/* small css for lesson 3 */
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #CCF7FB;
+    background-color: yellow;
 }
 
 header {
-    display: flex; 
-    justify-content: space-evenly;
+    font-family: 'Sansita Swashed', cursive;
+    display: flex;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: lightblue;
 }
 
-.menu, ul{
-    list-style-type: none;
+main {
+    display: flex;
+}
+
+li, ul {
+    list-style: none;
+    padding: 5px;
     text-align: center;
 }
 
-.menu li {
-    display: flex;
-    padding: 10px;
-    display: block;
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    font-weight: bold;
 }
 
 h1, h2 {
-    color: #00008B;
+    color:blue;
+    font-family: 'Sansita Swashed', cursive;
 }
 
 h2 {
     font-style: italic;
+    font-weight: bold;
 }
 
 footer {
-    display: flex;
-    justify-content: space-evenly;  
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: lightgrey;
 }
 
-@media only screen and (min-width: 37.5em){
-    .menu li{
-        display: inline;
-        padding: 25px;
-    }
-
+.paragraph {
+    border-bottom: 1px solid black;
 }
 
-@media only screen and (min-width: 75em){    
-    .menu li {
-        padding: 100px;
-    }    
+footer a, #year {
+    display: inline-block;
+    padding-top: 5px;    
 }
