@@ -1,0 +1,62 @@
+/* small css file for lesson 5*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: lightblue;
+}
+
+.navigation li:first-child {
+    text-align: center;
+    display: block; 
+    text-decoration: none;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    text-align: center;
+}
+
+.response li {
+    display: block;
+    text-align: center;
+}
+
+.response nav li {
+    display: block;
+}
+
+section div{
+    padding: 20px;
+    border-style: double;
+    background-color: lightcyan;
+}
+
+footer {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: lightgrey;
+}
+
+footer a, #year {
+    display: inline-block;
+}
