@@ -13,6 +13,12 @@
 <title>Joseph Watt Assignment Links WDD 230</title>
 </head>
 <body>
+
+  <div id="announcement">
+    <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. 
+      Saturday at the city park Pavilion.
+    </p>
+  </div>
  
   <header>
     <img src="/wdd230/lesson5/images/weather.png" alt="profile picture">
@@ -23,7 +29,7 @@
   <nav>
       <ul class="navigation">
           <li><a href="" onclick="menutoggle()">&#9776; Home</a></li>
-          <li><a href="">Preston</a></li>
+          <li><a class="active" href="">Preston</a></li>
           <li><a href="">Soda Springs</a></li>  
           <li><a href="">Fish Haven</a></li>
           <li><a href="">Storm Center</a></li>
@@ -32,35 +38,39 @@
   </nav>
 
   <main>
+    <h2>Preston</h2>          
+    <div class="content">
+      <img src="/wdd230/lesson5/images/country.jpeg" alt="country weather landscape"> 
+      <div class="summary">
+        <h4>Summary</h4>
+        <p>Tempature: 80</p>
+        <p>Wind: 10</p>
+        <p>Low: 30</p>
+        <p>Sunset: 5:00pm</p> 
+      </div>    
+    </div>
 
-    <section>
-        <h2>Preston</h2>
-        <div class="content">
-          <img src="/wdd230/lesson5/images/country.jpeg" alt="country weather landscape">
-        </div>
+    <div>
+      <h3>5-Day Forecast</h3>
+      <img src="images/5-day-forecast.jpg" alt="5 day forecast">
+    </div>
 
-        <div>
-          <img src="images/5-day-forecast.jpg" alt="5 day forecast">
-        </div>
+    <div class="article">
+      <h3>Article</h3>
+        <p>Preston Idaho is a wonderful small town located near the Idaho
+          Utah border.  It is small enough to still give you the country feel,
+          but still big enough that it contains all the amenities that you 
+          like to have in a bigger city.
+        </p>
+    </div>
 
-        <div>
-          <p>Preston Idaho is a wonderful small town located near the Idaho
-            Utah border.  It is small enough to still give you the country feel,
-            but still big enough that it contains all the amenities that you 
-            like to have in a bigger city.
-          </p>
-        </div>
+    <div>
+      <h3>Fish Haven</h3>
+    </div>
 
-        <div>
-          <h3>Fish Haven</h3>
-        </div>
-
-        <div>
-          <h3>Contact Information</h3>
-        </div>
-
-    </section>
-
+    <div>
+      <h3>Contact Information</h3>
+    </div>
   </main>
 
   <footer> 
@@ -70,6 +80,7 @@
 
 <script src="/wdd230/lesson5/js/footerjava.js"></script>
 <script src="/wdd230/lesson5/js/menu.js"></script>
+<script src="/wdd230/lesson5/js/announcement.js"></script>
 
 </body>
 </html> 
