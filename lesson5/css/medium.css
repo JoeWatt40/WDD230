@@ -5,37 +5,37 @@
         display: none;
     }
 
-    nav {
-        display: inline;
-        text-align: center;
-        padding: 20px;
+    nav ul li {
+        margin: 0 auto;
     }
 
-    nav li {
-        display:inline;
-        text-align: center;
-    }
-
-    nav ul {
+    .response, .navigation li {
+        display: flex;
         background-color: darkblue;
+        text-align: center; 
     }
 
-    nav li a:hover{
+    .navigation {
+        display: flex;
+        background-color: darkblue;
+        text-align: center; 
+    }
+
+    a:hover{
         text-decoration: underline;
         background-color: white;
         color: black;
-    }
+    }       
 
     nav li a {
         color:white;
         padding: 10px;
     }
 
-    footer, section {
+    footer, main {
         margin: 0 auto;
         display: block;
         width: 575px;
-        text-align: center;
     }
 
 }

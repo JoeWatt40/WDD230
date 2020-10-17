@@ -4,6 +4,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#announcement, #display{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 header {
     justify-content: center;
     display: flex;
@@ -13,10 +19,42 @@ header {
     background-color: lightblue;
 }
 
+h2, h3 {
+    text-align: center;
+}
+
+.summary {
+    position: absolute;
+    top: 280px;
+    left: 30px;
+    background-color: white;
+    opacity: 0.4;
+    font-weight: bold;
+}
+
+.summary, p{
+    margin: 0;    
+}
+
+main img {
+    width: 100%;
+}
+
+
+.article {
+    text-align: left;
+}
+
 .navigation li:first-child {
     text-align: center;
     display: block; 
     text-decoration: none;
+}
+
+.active {
+    background-color: lightblue;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 nav ul {
@@ -27,27 +65,22 @@ nav li {
     display: none;
 }
 
+nav li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
 a {
     text-decoration: none;
 }
 
-section {
-    text-align: center;
-}
-
 .response li {
     display: block;
-    text-align: center;
+    text-align: center;    
 }
 
 .response nav li {
     display: block;
-}
-
-section div{
-    padding: 20px;
-    border-style: double;
-    background-color: lightcyan;
 }
 
 footer {
