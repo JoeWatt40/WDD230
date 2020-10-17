@@ -15,7 +15,7 @@ h1 {
     font-style: italic;
 }
 
-#card {
+#first, #second, #third {
     background-color:lightgrey;
     margin: 10px;
     border-radius: 25px;
