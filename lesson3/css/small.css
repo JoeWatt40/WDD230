@@ -7,11 +7,15 @@ body {
 
 header {
     font-family: 'Sansita Swashed', cursive;
-    display: flex;
+    display: inline-flexbox;
     text-align: center;
     border: 5px solid black;
     border-radius: 25px;
     background-color: lightblue;
+}
+
+header img {
+    float: left;
 }
 
 main {
@@ -19,9 +23,10 @@ main {
     padding: 20px;
 }
 
-img {
+/* img {
     max-width: 100%;
-}
+    float: left;
+} */
 
 li, ul {
     list-style: none;
