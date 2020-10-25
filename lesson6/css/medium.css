@@ -1,0 +1,51 @@
+/* medium css file for lesson 6*/
+
+@media only screen and (min-width: 37.5em){
+    .navigation  li:first-child{
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0 auto;
+    }
+
+    .summary {
+        position: relative;
+        bottom: 200px;
+        left: 20px;
+        width: 150px;
+        background-color: white;
+        opacity: 0.4;
+        font-weight: bold;
+    }
+
+    .response, .navigation li {
+        display: flex;
+        background-color: darkblue;
+        text-align: center; 
+    }
+
+    .navigation {
+        display: flex;
+        background-color: darkblue;
+        text-align: center; 
+    }
+
+    a:hover{
+        text-decoration: underline;
+        background-color: white;
+        color: black;
+    }       
+
+    nav li a {
+        color:white;
+        padding: 10px;
+    }
+
+    footer, main {
+        margin: 0 auto;
+        display: block;
+        width: 575px;
+    }
+
+}
