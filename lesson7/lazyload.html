@@ -15,29 +15,37 @@
 <body>
  
   <header>
-    <img src="/wdd230/images/profile.jpg" alt="profile picture">    
-    <h1>Joseph Watt</h1>        
+    <img src="/wdd230/lesson7/images/weather.png" alt="landscape picture">
+    <h1>LAZY LOADING IMAGES</h1>        
   </header>
 
-  <div class="center">
+  <h1>Lazy images to load</h1>
+  
+  <div class="images">
 
-    <h2>WDD 230 Assignment Portal</h2>  
+    <picture>
+      <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/slc_temple_300x400.jpg" alt="salt lake temple">
+    </picture>
 
-    <ul class="list">
-      <li>Lesson 2:<a href="/wdd230/lesson2/design-principles.html">Design Principles</a></li>
-      <li>Lesson 3:<a href="/wdd230/lesson3/index.html">Website Planning</a></li>
-      <li>Lesson 4:<a href="/wdd230/lesson4/preston-4.html">Preston Town Page</a> | <a href="/wdd230/lesson5/preston-5.html">Preston Weather</a></li>
-      <li>Lesson 6:<a href="/wdd230/lesson6/preston-6.html">Preston Continued Week 6</a></li>
-    </ul>
+    <picture>
+      <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/josephsmith_300x400.jpg" alt="joseph smith">
+    </picture>
+
+    <picture>
+      <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/grant_300x400.jpg" alt="grant at football game">
+    </picture>
+
+    <picture>
+      <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/sand_300x400.jpg" alt="picture of beach sand">
+    </picture>  
+
+    <picture>
+      <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/dna_300x400.png" alt="picture of beach sand">
+    </picture> 
 
   </div>
 
-<footer> 
-  <p id="year"></p><a href="https://www.byui.edu/online">BYUI Online Learning</a>
-  <p id="date"></p>
-</footer>
-
-<script src="/wdd230/js/footerjava.js"></script>
+<script src="/wdd230/lesson7/js/lazy.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
   WebFont.load({google: {families: ['Poppins']}});
