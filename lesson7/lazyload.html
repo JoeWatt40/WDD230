@@ -15,40 +15,30 @@
 <body>
  
   <header>
-    <img src="/wdd230/lesson7/images/weather.png" alt="landscape picture">
     <h1>LAZY LOADING IMAGES</h1>        
   </header>
 
-  <h1>Lazy images to load</h1>
-  
-  <div class="images">
+  <picture>
+    <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/slc_temple_300x400.jpg" alt="salt lake temple">
+  </picture>
 
-    <picture>
-      <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/slc_temple_300x400.jpg" alt="salt lake temple">
-    </picture>
+  <picture>
+    <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/josephsmith_300x400.jpg" alt="joseph smith">
+  </picture>
 
-    <picture>
-      <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/josephsmith_300x400.jpg" alt="joseph smith">
-    </picture>
+  <picture>
+    <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/grant_300x400.jpg" alt="grant at football game">
+  </picture>
 
-    <picture>
-      <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/grant_300x400.jpg" alt="grant at football game">
-    </picture>
+  <picture>
+    <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/sand_300x400.jpg" alt="picture of beach sand">
+  </picture>  
 
-    <picture>
-      <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/sand_300x400.jpg" alt="picture of beach sand">
-    </picture>  
-
-    <picture>
-      <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/dna_300x400.png" alt="picture of beach sand">
-    </picture> 
-
-  </div>
+  <picture>
+    <img src="/wdd230/lesson7/images/place_holder_300x400.jpg" data-src="/wdd230/lesson7/images/dna_300x400.png" alt="picture of beach sand">
+  </picture> 
 
 <script src="/wdd230/lesson7/js/lazy.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-  WebFont.load({google: {families: ['Poppins']}});
-</script>
+
 </body>
 </html> 
