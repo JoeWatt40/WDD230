@@ -1,20 +1,53 @@
-/* small css file for lazyload images*/
+/* small css for lesson 7 image gallery */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 header {
     justify-content: center;
-    display: flex;
+    display: inline-flexbox;
     text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
     background-color: lightblue;
 }
 
-picture img {
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
+#image {
+    float: right;
+}
+
+#column {
+    display: grid;
+    grid-template-columns: 1fr;
     filter: blur(0);
     transition: filter 1s;
 }
 
+img {
+    padding: 10px;
+}
+
+#column, p {
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 5px grey;
+    background-color: lightgray;
+}
+
 picture img[data-src] {
     filter: blur(0.25em);
+}
+
+footer {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: lightgrey;
+}
+
+footer a, #year {
+    display: inline-block;
 }
