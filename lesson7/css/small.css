@@ -13,6 +13,13 @@ header {
     background-color: lightblue;
 }
 
+#announcement, #display{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
 #image {
     float: right;
 }
@@ -39,6 +46,44 @@ img {
 
 picture img[data-src] {
     filter: blur(0.25em);
+}
+
+.navigation li:first-child {
+    text-align: center;
+    display: block; 
+    text-decoration: none;
+}
+
+.active {
+    background-color: lightblue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: none;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.response li {
+    display: block;
+    text-align: center;    
+}
+
+.response nav li {
+    display: block;
 }
 
 footer {
