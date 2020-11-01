@@ -29,7 +29,6 @@
     .navigation {
         display: flex;
         background-color: darkblue;
-        text-align: center;
     }
 
     a:hover{

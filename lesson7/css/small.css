@@ -6,7 +6,6 @@ body {
 
 header {
     justify-content: center;
-    display: inline-flexbox;
     text-align: center;
     border: 2px solid black;
     border-radius: 25px;
@@ -20,7 +19,7 @@ header {
     padding: 10px;
 }
 
-#image {
+header img {
     float: right;
 }
 
@@ -32,11 +31,15 @@ header {
 }
 
 img {
-    padding: 10px;
+    padding: 5px;
 }
 
 #column, p {
     text-align: center;
+}
+
+#column {
+    padding: 10px;
 }
 
 .card:hover {
