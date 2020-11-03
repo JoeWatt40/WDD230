@@ -9,6 +9,27 @@
         margin: 0 auto;
     }
 
+    header {
+        width: 575px;
+        margin: 0 auto;
+    }
+
+    .article img {
+        display: inline-flex;
+        width: 25%; 
+        float: right;
+    }
+
+    .contact img {
+        display: inline-flex;
+        width: 20%;
+        float: left;
+    }
+
+    .contact p {
+        text-align: right;
+    }
+
     .response, .navigation li {
         display: flex;
         background-color: darkblue;
@@ -34,7 +55,6 @@
 
     footer, main {
         margin: 0 auto;
-        display: block;
         width: 575px;
     }
 

@@ -8,31 +8,47 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding: 10px;
 }
 
 header {
-    justify-content: center;
-    display: flex;
+    background-color: lightblue;
+    display: inline-flexbox;
     text-align: center;
     border: 2px solid black;
     border-radius: 25px;
-    background-color: lightblue;
 }
 
-h2, h3 {
+header img {
+    float: right;
+}   
+
+h3 {
+    margin: 0;
+    border-bottom: 1px solid black;
     text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.content {
+    position: relative;
 }
 
 .summary {
     position: absolute;
-    top: 280px;
-    left: 30px;
+    top: 40px;
+    left: 20px;
+    width: 150px;
     background-color: white;
     opacity: 0.4;
     font-weight: bold;
 }
 
-.summary, p{
+.summary p{
+    text-align: left;
     margin: 0;    
 }
 
@@ -40,9 +56,8 @@ main img {
     width: 100%;
 }
 
-
-.article {
-    text-align: left;
+.article img {
+    display: none;
 }
 
 .navigation li:first-child {
@@ -81,6 +96,14 @@ a {
 
 .response nav li {
     display: block;
+}
+
+.fish {
+    display: none;
+}
+
+.contact img {
+    display: none;
 }
 
 footer {
