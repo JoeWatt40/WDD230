@@ -1,4 +1,4 @@
-/* small css for lesson 8 form build */
+/* small css for lesson 8 table build */
 
 body {
     font-family: 'Ubuntu', sans-serif;
@@ -23,18 +23,52 @@ header img {
     float: right;
 }
 
-#form {
-    text-align: center;
-    background-color: lightgreen;
-    width: 375px;
+table {
+    border-collapse: collapse;
+    border: 2px solid lightgrey;
     margin: 0 auto;
+    text-align: center;
 }
 
-h3 {
-    text-align: left;
+table, caption {
+    box-shadow: 10px 5px 10px #888888;
+    padding: 10px;
 }
 
-/* Navigation */
+caption {
+    border: 2px solid lightgrey;
+    border-bottom: 0;
+    background-color: #7fb9c2;
+    font-weight: bold;
+}
+
+thead {
+    font-weight: bold;
+}
+
+thead, .change {
+    background-color: #628ca6;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+td, th {
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+tbody {
+    background-color: #e7ffed;
+}
+
+tfoot {
+    background-color: #7fb9c2;
+    font-size: 10px;
+}
+
 .navigation li:first-child {
     text-align: center;
     display: block; 
@@ -72,7 +106,6 @@ a {
 .response nav li {
     display: block;
 }
-/*End navigation*/
 
 footer {
     text-align: center;
