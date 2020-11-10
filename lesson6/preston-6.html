@@ -6,11 +6,11 @@
 <meta name="description" content="Preston Weather Site for Joseph Watt in WDD230: Web Design and Development Brigham Young University-Idaho">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Peddana&family=Poppins:wght@300&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="/wdd230/favicon.ico">
-<link rel="stylesheet" href="/wdd230/lesson6/css/normalize.css">
-<link rel="stylesheet" href="/wdd230/lesson6/css/small.css">
-<link rel="stylesheet" href="/wdd230/lesson6/css/medium.css">
-<link rel="stylesheet" href="/wdd230/lesson6/css/large.css">
-<title>Joseph Watt Assignment Links WDD 230</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+<title>Joseph Watt Preston Weather Page for WDD 230</title>
 </head>
 <body>
 
@@ -21,7 +21,7 @@
   </div>
  
   <header>
-    <img src="/wdd230/lesson6/images/weather.png" alt="landscape picture">
+    <img src="images/weather.png" alt="landscape picture">
     <h1>What's The Weather?</h1>
     <h4>"We make sure you have the best weather. . . .report"</h4>        
   </header>
@@ -40,30 +40,73 @@
   <main>
     <h2>Preston</h2>          
     <div class="content">
-      <img srcset="/wdd230/lesson6/images/week6image.jpeg" media="width=400px">
-      <div class="summary">
-        <h4>Summary</h4>
-        <p>Tempature:</p><p id="temp">80</p>
-        <p>Wind:</p><p id="wind">10</p>
-        <p>Windchill:</p><p id="chill"></p>
-        <p>Low: 30</p>
-        <p>Sunset: 5:00pm</p> 
-      </div> 
-      <p id="size"></p>   
+      <div class="image">
+        <picture>
+            <source media="(min-width:600px)" srcset="/wdd230/lesson6/images/hero_image_medium.jpg">
+            <source media="(min-width:1200px)" srcset="/wdd230/lesson6/images/hero_image_large.jpg">
+            <img src="images/hero_image_small.jpg" alt="landscape image">          </picture>
+        <div class="summary">
+          <h3>Weather</h3>
+          <div>
+            <p>Tempature:  <span id="temp">50</span></p>
+            <p>Wind:  <span id="wind">10</span></p>
+            <p>Windchill:  <span id="chill"></span></p>
+            <p>Low: 30</p>
+            <p>Sunset: 5:00pm</p> 
+          </div>
+        </div> 
+        <p id="small">Small</p> 
+        <p id="medium">Medium</p> 
+        <p id="large">Large</p> 
+      </div>  
     </div>
     
-    <div>
-      <h3>5-Day Forecast</h3>
-      <img src="/wdd230/lesson6/images/5-day-forecast.jpg" alt="5 day forecast">
+    <div class="forecast">
+      <h2>5-Day Forecast</h2>
+      <table>
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+        <tr>
+          <td>85&deg;</td>
+          <td>87&deg;</td>
+          <td>81&deg;</td>
+          <td>90&deg;</td>
+          <td>82&deg;</td>
+        </tr>
+      </table>
     </div>
 
     <div class="article">
-      <h3>Article</h3>
-        <p>Preston Idaho is a wonderful small town located near the Idaho
-          Utah border.  It is small enough to still give you the country feel,
-          but still big enough that it contains all the amenities that you 
-          like to have in a bigger city.
-        </p>
+      <h2>Article</h2>
+      <img src="images/rainbow.jpg" alt="rainbow image">
+      <p>One together man hath behold set given. Great sixth form darkness yielding 
+        forth over heaven you&#39;re there were moving. Above seasons let air wherein
+        have saying itself won&#39;t herb from from female gathered. Spirit fish for 
+        won&#39;t.</p>
+      <p>Let. Replenish subdue together fifth fowl second won&#39;t seas you fruit face 
+        beast third living fly. There living fill. Subdue bearing grass without moving 
+        land behold.</p>      
+      <p>Together i whose upon, brought image herb place. Great set Replenish itself moveth 
+        herb first be, whose itself divide. Female shall isn&#39;t lights moved over man
+        their days subdue moveth doesn&#39;t third a herb place meat called.</p>
+    </div>
+
+    <div class="fish">
+      <h2>Fish Haven</h2>
+    </div>
+
+    <div class="contact">
+      <h2>Contact Information</h2>
+      <img src="images/preston_map.jpg" alt="map of preston">      
+      <p>Joseph Watt</p>
+      <p>208-567-5309</p>
+      <p>wat19030@byui.edu</p> 
+      <p>www.byui.edu.online</p> 
     </div>
 
   </main>
@@ -73,10 +116,12 @@
     <p id="date"></p>
   </footer>
 
-<script src="/wdd230/lesson6/js/footerjava.js"></script>
-<script src="/wdd230/lesson6/js/menu.js"></script>
-<script src="/wdd230/lesson6/js/announcement.js"></script>
-<script src="/wdd230/lesson6/js/windchill.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/web_font.js"></script>
+<script src="js/footerjava.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/announcement.js"></script>
+<script src="js/windchill.js"></script>
 
 </body>
 </html> 
