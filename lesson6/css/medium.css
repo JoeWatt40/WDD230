@@ -8,15 +8,52 @@
     nav ul li {
         margin: 0 auto;
     }
+    
+    #small, #large {
+        display: none;
 
-    .summary {
-        position: relative;
-        bottom: 200px;
-        left: 20px;
-        width: 150px;
-        background-color: white;
-        opacity: 0.4;
+    }
+
+    #medium {
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 400px;
+        width: 100px;
+        color: white;
+        font-size: 20px;
         font-weight: bold;
+    }
+
+    .forecast {
+        display: initial;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        background-color: darkgray;
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .article img {
+        display: inline-flex;
+        width: 25%; 
+        float: right;
+    }
+
+    .contact img {
+        display: inline-flex;
+        width: 20%;
+        float: left;
+    }
+
+    .contact p {
+        text-align: right;
     }
 
     .response, .navigation li {
@@ -42,9 +79,8 @@
         padding: 10px;
     }
 
-    footer, main {
+    header, main, nav, footer {
         margin: 0 auto;
-        display: block;
         width: 575px;
     }
 
