@@ -1,1 +1,1 @@
-WebFont.load({google: {families: ['Poppins', sans-serif]}});
+WebFont.load({google: {families: ['Poppins', 'sans-serif']}});
