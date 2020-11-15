@@ -28,7 +28,8 @@
 
     <nav>
         <ul class="navigation">
-            <li><a href="" onclick="menutoggle()">&#9776; Home</a></li>
+            <li><a href="" onclick="menutoggle()">&#9776; Menu</a></li>
+            <li><a href="/wdd230/lesson9/index.html">Home</a></li>
             <li><a href="/wdd230/lesson6/preston-6.html">Preston</a></li>
             <li><a href="">Soda Springs</a></li>  
             <li><a href="">Fish Haven</a></li>
@@ -38,52 +39,44 @@
     </nav>
 
     <main>
-        <h2>Preston</h2>
 
-        <section> 
+        <div class="content">  
+            <div class="image"></div>    
+            <img src="images/country.jpeg" alt="country weather landscape">   
+        </div>
 
-            <div class="content">  
-                <div class="image"></div>    
-                <img src="images/country.jpeg" alt="country weather landscape">   
-            </div>
+        <div class="cards"></div>
 
-            <div class="data">
-                <h2>Town Data</h2>
-                
-            </div>
+        <div class="article">
+            <h2>Article</h2>
+            <img src="images/rainbow.jpg" alt="rainbow image">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                deserunt mollit anim id est laborum." Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                deserunt mollit anim id est laborum.
+                </p>
+        </div>
 
-            <div class="article">
-                <h2>Article</h2>
-                <img src="images/rainbow.jpg" alt="rainbow image">
-                  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                    deserunt mollit anim id est laborum." Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                    deserunt mollit anim id est laborum.
-                  </p>
-            </div>
-
-            <div class="contact">
-                <h2>Contact Information</h2>
-                <img src="/wdd230/lesson5/images/preston_map.jpg" alt="map of preston">      
-                <p>Joseph Watt</p>
-                <p>208-567-5309</p>
-                <p>wat19030@byui.edu</p> 
-                <p>www.byui.edu.online</p> 
-              </div>
-        </section>
+        <div class="contact">
+            <h2>Contact Information</h2>
+            <img src="/wdd230/lesson5/images/preston_map.jpg" alt="map of preston">      
+            <p>Joseph Watt</p>
+            <p>208-567-5309</p>
+            <p>wat19030@byui.edu</p> 
+            <p>www.byui.edu.online</p> 
+        </div>
     
-    </main>
-
-    
+    </main>   
     
     <footer> 
+        <a href="home-wireframes.html">WIREFRAMES</a><br>
         <p id="year"></p><a href="https://www.byui.edu/online">BYUI Online Learning</a>
         <p id="date"></p>
     </footer>
@@ -91,6 +84,7 @@
 <script src="js/footerjava.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/announcement.js"></script>
+<script src="js/town.js"></script>
 
 </body>
 </html> 
