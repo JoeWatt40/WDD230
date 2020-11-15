@@ -19,28 +19,48 @@ header {
     padding: 10px;
 }
 
-img {
+header img {
     float: right;
 }
 
-main img {
+.content img {
     width: 100%;
 }
 
-h2 {
+.cards section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
     text-align: center;
+    background-color: lightgrey;
+}
+
+.cards img {
+    width: 175px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.cards h2, p {
+    margin: 0;
 }
 
 .contact img {
     display: none;
 }
 
-p {
+.contact p {
     text-align: left;
 }
 
 .article img {
     display: none;
+}
+
+.article h2 {
+    text-align: center;
 }
 
 /* Navigation */

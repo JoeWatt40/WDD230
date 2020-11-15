@@ -2,13 +2,20 @@
 
 @media only screen and (min-width: 650px){
     
-    footer, section, header, nav {
+    footer, header, main, nav {
         margin: 0 auto;
         display: block;
         width: 575px;
         text-align: center;
     }
 
+    .content img {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;        
+    }
     .contact img {
         display: inline-flex;
         width: 20%;
