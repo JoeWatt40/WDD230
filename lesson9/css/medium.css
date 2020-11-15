@@ -13,9 +13,15 @@
         width: 100%;
     }
 
-    .cards {
-        grid-template-columns: 1fr 1fr;        
+    .cards section  {
+        display: flex;  
+        flex-direction: row;     
     }
+
+    .cards section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
     .contact img {
         display: inline-flex;
         width: 20%;
