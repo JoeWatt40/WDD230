@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Preston Weather Site for Joseph Watt in WDD230: Web Design and Development Brigham Young University-Idaho">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Peddana&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/wdd230/favicon.ico">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+<title>Joseph Watt Preston Weather Page for WDD 230</title>
+</head>
+<body>
+
+  <div id="announcement">
+    <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. 
+      Saturday at the city park Pavilion.
+    </p>
+  </div>
+ 
+  <header>
+    <img src="images/weather.png" alt="sun behind cloud logo">
+    <h1>What's The Weather?</h1>
+    <h4>"We make sure you have the best weather. . . .report"</h4>        
+  </header>
+
+  <nav>
+      <ul class="navigation">
+          <li><a href="" onclick="menutoggle()">&#9776; Home</a></li>
+          <li><a class="active" href="/wdd230/lesson6/preston-6.html">Preston</a></li>
+          <li><a href="">Soda Springs</a></li>  
+          <li><a href="">Fish Haven</a></li>
+          <li><a href="/wdd230/lesson8/stormcenter.html">Storm Center</a></li>
+          <li><a href="/wdd230/lesson7/gallery-7.html">Gallery</a></li>
+      </ul>
+  </nav>
+
+  <main>
+    <h2>Preston</h2>          
+    <div class="content">
+      <div class="image">
+        <picture>
+            <source media="(min-width:575px)" srcset="images/hero_image_medium.jpg">
+            <source media="(min-width:1200px)" srcset="images/hero_image_large.jpg">
+            <img src="images/hero_image_small.jpg" alt="landscape image"></picture>
+        <div class="summary">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th colspan="2">Weather Summary</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Current Temp: <span id="temp"></span>&#176;</td>
+                </tr>
+                <tr>
+                  <td>Wind: <span id="wind"></span></td>
+                </tr>
+                <tr>
+                  <td>Humidity: <span id="humid"></span></td>
+                </tr>
+                <tr>
+                  <td>High Temp: <span id="high"></span>&#176;</td>
+                </tr>
+                <tr>
+                  <td>Low Temp: <span id="low"></span>&#176;</td>
+                </tr>
+                <tr>
+                  <td>Windchill: <span id="chill"></span></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2">Sunset: <span id="time"></span> p.m.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div> 
+        <p id="small">Small</p> 
+        <p id="medium">Medium</p> 
+        <p id="large">Large</p> 
+      </div>  
+    </div>
+    
+    <div class="forecast">
+      <h2>5-Day Forecast</h2>
+      <table>
+        <tr>
+          <th><span id="day1"></span></th>
+          <th><span id="day2"></span></th>
+          <th><span id="day3"></span></th>
+          <th><span id="day4"></span></th>
+          <th><span id="day5"></span></th>
+        </tr>
+        <tr>
+          <td>85&deg;</td>
+          <td>87&deg;</td>
+          <td>81&deg;</td>
+          <td>90&deg;</td>
+          <td>82&deg;</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="article">
+      <h2>Article</h2>
+      <img src="images/rainbow.jpg" alt="rainbow image">
+      <p>One together man hath behold set given. Great sixth form darkness yielding 
+        forth over heaven you&#39;re there were moving. Above seasons let air wherein
+        have saying itself won&#39;t herb from from female gathered. Spirit fish for 
+        won&#39;t.</p>
+      <p>Let. Replenish subdue together fifth fowl second won&#39;t seas you fruit face 
+        beast third living fly. There living fill. Subdue bearing grass without moving 
+        land behold.</p>      
+      <p>Together i whose upon, brought image herb place. Great set Replenish itself moveth 
+        herb first be, whose itself divide. Female shall isn&#39;t lights moved over man
+        their days subdue moveth doesn&#39;t third a herb place meat called.</p>
+    </div>
+
+    <div class="fish">
+      <h2>Fish Haven</h2>
+    </div>
+
+    <div class="contact">
+      <h2>Contact Information</h2>
+      <img src="images/preston_map.jpg" alt="map of preston">      
+      <p>Joseph Watt</p>
+      <p>208-567-5309</p>
+      <p>wat19030@byui.edu</p> 
+      <p>www.byui.edu.online</p> 
+    </div>
+
+  </main>
+
+  <footer> 
+    <p id="year"></p><a href="https://www.byui.edu/online">BYUI Online Learning</a>
+    <p id="date"></p>
+  </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/web_font.js"></script>
+<script src="js/footerjava.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/announcement.js"></script>
+<!-- <script src="js/windchill.js"></script> -->
+<script src="js/weatherapi.js"></script>
+
+</body>
+</html> 
