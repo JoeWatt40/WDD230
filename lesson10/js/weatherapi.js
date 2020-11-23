@@ -1,5 +1,5 @@
-const requestURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=a03b3973d266e740f6e46c6fce445207';
-const dayURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=a03b3973d266e740f6e46c6fce445207';
+const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=a03b3973d266e740f6e46c6fce445207';
+const dayURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=a03b3973d266e740f6e46c6fce445207';
 
 fetch(requestURL)
   .then((response) => response.json())
@@ -35,16 +35,22 @@ fetch(requestURL)
   fetch(dayURL)
   .then((response) => response.json())
   .then((weatherObject) => {
-  
-    var days = weatherObject.list.filter(x => x.dt_text.includes('18:00:00'));
-    console.table(days);
- 
-    let weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-    for (i = 0; i < days.length; i++){
-      const day = new Date(forecast[i].dt_text);
+    const days = weatherObject.list.filter(x => x.dt_txt.includes('18:00:00')); 
+    const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let day = 0;    
 
-      document.getElementById("day{i+1}").textContent =  weekdays[day.getDay()];
-    }
+    days.forEach(x =>{
+
+      const d = new Date(x.dt_txt);
+
+      document.getElementById(`days${day+1}`).textContent = weekdays[d.getDay()];
+      document.getElementById(`image${day+1}`).src = `https://openweathermap.org/img/w/${x.weather[0].icon}.png`;
+      document.getElementById(`image${day+1}`).alt = x.weather[0].description;
+      document.getElementById(`temp${day+1}`).textContent =  (((x.main.temp -273.15)*1.8)+32).toFixed(0);
+      
+      day++;
+
+    });
 
   });
