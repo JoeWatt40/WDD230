@@ -43,8 +43,10 @@ header img {
     margin: 0 auto;
 }
 
-.cards h2, p {
-    margin: 0;
+.cards section h2{
+    color: blue;
+    font-style: italic;
+    font-size: 35px;
 }
 
 .contact img {
