@@ -55,6 +55,10 @@ tr:nth-child(even) {
     background-color: #e7f0ed;
 }
 
+tr:nth-child(5) td:nth-child(1) {
+    font-style: italic;
+}
+
 td, th {
     border: 1px solid lightgrey;
     padding: 10px;
