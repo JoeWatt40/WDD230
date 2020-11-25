@@ -1,0 +1,213 @@
+/* small css for lesson 11 */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: lightblue;
+}
+
+#announcement, #display{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+header img {
+    float: right;
+}
+
+.content img {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+/*hero image css*/
+#small {
+    position: absolute;
+    top: 40px;
+    left: 400px;
+    width: 100px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#medium, #large  {
+    display: none;
+}
+/*end hero image css*/
+/*css for index page*/
+.cards section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.cards img {
+    width: 175px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.cards section h2{
+    color: blue;
+    font-style: italic;
+    font-size: 35px;
+}
+/*end index css*/
+/*css for town pages*/
+.content {
+    position: relative;
+}
+
+.summary {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 175px;
+    background-color: white; 
+    opacity: .8;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+}
+
+.data {
+    border: 2px solid black;
+}
+
+.data td {
+    padding: 0px;
+    background-color: white;
+    border: none;
+}
+
+.data th {
+    color: red;
+    border-bottom: 1px solid black;
+}
+
+.forecast th, td {
+    background-color: darkgray;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#small {
+    position: absolute;
+    top: 40px;
+    left: 250px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#medium, #large  {
+    display: none;
+}
+
+.summary p{
+    text-align: left;
+    margin: 0;    
+}
+
+main img {
+    width: 100%;
+}
+/*end of css for town page*/
+/*contact and article css*/
+.contact img {
+    display: none;
+}
+
+.contact p {
+    text-align: left;
+}
+
+.article img {
+    display: none;
+}
+/*end of article and contact css*/
+/* Navigation */
+.navigation li:first-child {
+    text-align: center;
+    display: block; 
+    text-decoration: none;
+}
+
+.active {
+    background-color: lightblue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: none;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.response li {
+    display: block;
+    text-align: center;    
+}
+
+.response nav li {
+    display: block;
+}
+
+.response, .navigation li {
+    background-color: darkblue;
+}
+
+nav li a {
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+} 
+/*End navigation*/
+
+footer {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: lightgrey;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a, #year {
+    display: inline-block;
+}
