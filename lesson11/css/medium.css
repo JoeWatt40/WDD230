@@ -29,6 +29,17 @@
         font-weight: bold;
     }
     /*end hero image css*/
+    /*card css*/
+    .cards section  {
+        display: flex;  
+        flex-direction: row; 
+        padding: 10px;    
+    }
+
+    .cards section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    /*end card css*/
     .contact img {
         display: inline-flex;
         width: 20%;

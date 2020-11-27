@@ -3,7 +3,18 @@
 @media only screen and (min-width: 1200px){
     footer, header, main, nav {
         width: 800px;
-    }   
+    }  
+    
+    .cards, section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        grid-gap: 10px;
+    }
+
+    .cards section {
+        display: block;
+    }
     
     #small, #medium {
         display: none;
