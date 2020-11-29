@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    background-color: lightseagreen;
 }
 
 header {
@@ -144,6 +145,12 @@ main img {
 }
 /*end of article and contact css*/
 /* Navigation */
+
+nav {
+    border-top: 1px solid black;
+    /* border-radius: 25px;
+    background-color: blue; */
+}
 .navigation li:first-child {
     text-align: center;
     display: block; 
@@ -164,9 +171,10 @@ nav li {
     display: none;
 }
 
-nav li a:hover{
+nav li a:hover, .active{
     text-decoration: underline;
-    color: black;
+    color: white;
+    font-size: 125%;
 }
 
 a {
@@ -175,33 +183,58 @@ a {
 
 .response li {
     display: block;
-    text-align: center;    
+    text-align: center; 
+    padding: 5px;   
 }
 
 .response nav li {
     display: block;
 }
 
-.response, .navigation li {
-    background-color: darkblue;
+nav li {
+    color:black;
+    font-weight: bold;
 }
-
-nav li a {
-    color: white;
-}
-
-a:hover{
-    text-decoration: underline;
-    background-color: white;
-    color: black;
-} 
 /*End navigation*/
+
+#form {
+    text-align: center;
+    background-color: lightgreen;
+    width: 375px;
+    margin: 0 auto;
+}
+
+h4 {
+    padding: 5px;
+}
+#column {
+    display: grid;
+    grid-template-columns: 1fr;
+    filter: blur(0);
+    transition: filter 1s;
+}
+
+img {
+    padding: 5px;
+}
+
+#column, p {
+    text-align: center;
+}
+
+#column {
+    padding: 10px;
+}
+
+picture img[data-src] {
+    filter: blur(0.25em);
+}
 
 footer {
     text-align: center;
-    border: 2px solid black;
-    border-radius: 25px;
-    background-color: lightgrey;
+    /* border: 2px solid black; */
+    /* border-radius: 25px;
+    background-color: lightgrey; */
 }
 
 footer p {
