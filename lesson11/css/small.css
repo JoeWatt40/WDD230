@@ -31,6 +31,7 @@ header img {
 h2 {
     text-align: center;
 }
+
 /*hero image css*/
 #small {
     position: absolute;
@@ -143,6 +144,10 @@ main img {
 .article img {
     display: none;
 }
+
+.article p {
+    text-align: left;
+}
 /*end of article and contact css*/
 /* Navigation */
 
@@ -232,15 +237,9 @@ picture img[data-src] {
 
 footer {
     text-align: center;
-    /* border: 2px solid black; */
-    /* border-radius: 25px;
-    background-color: lightgrey; */
+    border-top: 1px solid black;
 }
 
-footer p {
-    text-align: center;
-}
-
-footer a, #year {
-    display: inline-block;
+#date, #year {
+    margin: 0;
 }
