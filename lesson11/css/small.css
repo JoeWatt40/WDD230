@@ -68,6 +68,10 @@ h2 {
     font-style: italic;
     font-size: 35px;
 }
+
+.cards p {
+    margin: 0;
+}
 /*end index css*/
 /*css for town pages*/
 .content {
