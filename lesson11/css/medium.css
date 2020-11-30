@@ -66,24 +66,26 @@
 
     .response, .navigation li {
         display: flex;
-        background-color: darkblue;
         text-align: center; 
     }
 
     .navigation {
         display: flex;
-        background-color: darkblue;
     }
 
     a:hover{
         text-decoration: underline;
-        background-color: white;
-        color: black;
     }       
 
     nav li a {
-        color:white;
+        color:black;
+        font-weight: bold;
         padding: 10px;
+    }
+
+    #column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
