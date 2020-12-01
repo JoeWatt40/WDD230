@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: lightseagreen;
+    background-color: rgb(231, 233, 220);
 }
 
 header {
@@ -137,7 +137,11 @@ main img {
 }
 
 .events h2 {
-    color: red;
+    color: blue;
+    text-align: left;
+}
+
+.article h4 {
     text-align: left;
 }
 
