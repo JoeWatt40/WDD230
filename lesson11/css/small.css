@@ -135,6 +135,12 @@ table {
 main img {
     width: 100%;
 }
+
+.events h2 {
+    color: red;
+    text-align: left;
+}
+
 /*end of css for town page*/
 /*contact and article css*/
 .contact img {
