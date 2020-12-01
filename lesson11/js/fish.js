@@ -54,3 +54,36 @@ fetch(requestURL)
     });
 
   });
+
+  const eventURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+  fetch(eventURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) {
+      console.table(jsonObject); 
+      const towns = jsonObject['towns'];   
+      for (let i = 0; i < towns.length; i++ ) {
+          if (towns[i].name == "Fish Haven" ){
+          
+          let card = document.createElement('section');
+          let div = document.createElement('div');
+          let h2 = document.createElement('h2'); 
+          let h3 = document.createElement('h2'); 
+          let h4 = document.createElement('h2'); 
+
+          h2.textContent = towns[i].events[0];    
+          h3.textContent = towns[i].events[1]; 
+          h4.textContent = towns[i].events[2];       
+        
+          card.appendChild(div);          
+          div.appendChild(h2);  
+          div.appendChild(h3);
+          div.appendChild(h4);         
+  
+          document.querySelector('div.events').appendChild(card);
+      }
+          
+      }
+    });
