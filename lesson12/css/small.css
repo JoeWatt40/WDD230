@@ -103,7 +103,7 @@ picture img {
 .forecast th, td {
     background-color: darkgray;
     border: 1px solid black;
-    padding: 10x;   
+    padding: 10px;   
 }
 
 .type li {
