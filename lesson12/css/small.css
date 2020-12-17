@@ -10,6 +10,10 @@ header {
     justify-content: center;
 }
 
+main {
+    background-color: lightblue;
+}
+
 header img {
     float: right;
 }
@@ -29,12 +33,13 @@ ul {
 /*navigation*/
 nav {
     border-top: 1px solid black;
+    padding-top: 10px;
 }
 
 .navigation li:first-child {
     text-align: center;
-    display: block; 
-    text-decoration: none;
+    display: block;
+    text-decoration: none; 
 }
 
 .active {
@@ -50,7 +55,7 @@ nav li {
     display: none;
 }
 
-a:hover{
+nav li a:hover, .active{
     text-decoration: underline;
     font-size: 125%;
 }
@@ -73,6 +78,22 @@ nav li {
     font-weight: bold;
 }
 /*end navigation*/
+dt {
+    font-weight: bold;
+}
+
+dl {
+    text-align: left;
+}
+
+dd {
+    margin: 0;
+}
+
+picture img {
+    width: 175px;
+    height: 125px;
+}
 
 .type {
     font-weight: bold;

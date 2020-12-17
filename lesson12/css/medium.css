@@ -1,13 +1,17 @@
 /* medium css file for lesson 12*/
 
 @media only screen and (min-width: 450px){
-    
-    footer, header, main {
+    header, footer {
+        margin: 0 auto;
+    }
+
+    main {
         margin: 0 auto;
         display: block;
         width: 450px;
         text-align: center;
     }
+    
     /*navigation*/
     .navigation  li:first-child{
         display: none;
