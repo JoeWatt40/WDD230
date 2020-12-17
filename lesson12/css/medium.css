@@ -1,0 +1,40 @@
+/* medium css file for lesson 12*/
+
+@media only screen and (min-width: 450px){
+    
+    footer, header, main {
+        margin: 0 auto;
+        display: block;
+        width: 450px;
+        text-align: center;
+    }
+    /*navigation*/
+    .navigation  li:first-child{
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0 auto;
+    }
+
+    .response, .navigation li {
+        display: flex;
+        text-align: center; 
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }       
+
+    nav li a {
+        color:black;
+        font-weight: bold;
+        padding: 10px;
+    }
+    /*end navigation*/
+
+}
