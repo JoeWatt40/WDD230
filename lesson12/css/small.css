@@ -16,6 +16,7 @@ main {
 
 header img {
     float: right;
+    height: 100px;
 }
 
 div {
