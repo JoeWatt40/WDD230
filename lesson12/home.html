@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Scooter Home Page for Joseph Watt in WDD230: Web Design and Development Brigham Young University-Idaho">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Peddana&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/wdd230/lesson12/images/favicon.ico">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+<title>Joseph Watt Scooter Home Page for WDD 230</title>
+</head>
+<body>
+ 
+    <header>
+        <a href="/wdd230/lesson12/home.html"><img src="images/scooter.jpg" alt="scooter imgage"></a>
+        <h1>Scooters</h1>
+        <h2>We're the "how" you are going to get there</h2>
+        
+        <!-- <nav> -->
+            <ul class="navigation">
+                <li><a onclick="menutoggle()">&#9776; Menu</a></li>
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="/wdd230/lesson12/rentals.html">Rentals</a></li>
+                <li><a href="/wdd230/lesson12/reservations.html">Reservations</a></li>
+                <li><a href="/wdd230/lesson12/tours.html">Tours</a></li>  
+                <li><a href="/wdd230/lesson12/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+
+            <div>
+                <h2>Click Here to Make a Reservation!!!</h2>
+                <a href="/wdd230/lesson12/reservations.html"><img src="images/flashy.gif" alt="flashy motorcycle"></a>
+            </div>
+            
+            <table>
+                <caption><h2>Rental Types</h2></caption>
+                <tbody>
+                    <tr class="type">
+                        <td>Scooter</td><td>Engine Size</td><td>Capacity</td>
+                    </tr>
+                    <tr>
+                        <td>Honda Metropolitan</td><td>49cc</td><td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Honda Dio</td><td>110cc</td><td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Honda PCX150</td><td>149cc</td><td>2</td>
+                    </tr>
+                    <tr class="type">
+                        <td>ATV</td><td>Engine Size</td><td>Capacity</td>
+                    </tr>
+                    <tr>
+                        <td>Honda Pioneer</td><td>999cc</td><td>3</td>
+                    </tr>
+                    <tr class="type">
+                        <td>Jeep</td><td>Features</td><td>Capacity</td>
+                    </tr>
+                    <tr>
+                        <td>4-D Jeep Wrangler</td><td>Manual & A/C</td><td>5</td>
+                    </tr>
+                    <tr>
+                        <td>2-D Jeep Wrangler</td><td>Manual open air</td><td>4</td>
+                    </tr> 
+                </tbody>      
+            </table>
+            <!-- <div>
+                <h2>Rental Information</h2>
+            </div> -->
+
+            <div class="summary">
+                <table class="data">
+                  <thead>
+                    <tr><th>Weather Summary</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Currently: <span id="current"></span></td></tr>
+                    <tr><td>Current Temp: <span id="temp"></span>&#176;</td></tr>
+                    <tr><td>High Temp: <span id="high"></span>&#176;</td></tr>                    
+                    <tr><td>Low Temp: <span id="low"></span>&#176;</td></tr>
+                    <tr><td>Humidity: <span id="humid"></span>&#37;</td></tr>                                        
+                  </tbody>
+                </table>
+              </div>
+
+            <div class="forecast">
+                <h2>3-Day Forecast</h2>
+                <table>
+                  <tr>
+                    <th><span id="days1"></span></th>
+                    <th><span id="days2"></span></th>
+                    <th><span id="days3"></span></th>
+                  </tr>
+                  <tr>
+                    <td><img src="#" alt="" id="image1"><span id="temp1"></span>&deg; F</td>
+                    <td><img src="#" alt="" id="image2"><span id="temp2"></span>&deg; F</td>
+                    <td><img src="#" alt="" id="image3"><span id="temp3"></span>&deg; F</td>
+                  </tr>
+                </table>
+              </div>            
+        </section>    
+    </main>   
+    
+    <footer> 
+        <a href="https://www.openweathermap.org">Weather API Credit</a>
+        <a href="www.facebook.com"><img src="images/facebook.jpg" alt="facebook logo"></a>
+        <a href="www.twitter.com"><img src="images/twitter.jpg" alt="twitter logo"></a>
+        <p id="date"></p>
+    </footer>
+
+<script src="js/footerjava.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/api.js"></script>
+
+</body>
+</html> 
