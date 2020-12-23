@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Preston Weather Site for Joseph Watt in WDD230: Web Design and Development Brigham Young University-Idaho">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Peddana&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/wdd230/favicon.ico">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+<title>Joseph Watt Preston Weather Page for WDD 230</title>
+</head>
+<body>
+
+  <div id="announcement">
+    <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. 
+      Saturday at the city park Pavilion.
+    </p>
+  </div>
+ 
+  <header>
+    <a href="https://joewatt40.github.io/wdd230/"><img src="/wdd230/lesson11/images/weather.png" alt="site logo"></a>
+    <h1>What's The Weather?</h1>
+    <h2>"We make sure you have the best weather. . . .report"</h2>   
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="" onclick="menutoggle()">&#9776; Menu</a></li>
+            <li><a href="/wdd230/lesson11/index.html">Home</a></li>
+            <li><a href="/wdd230/lesson11/preston.html">Preston</a></li>
+            <li><a class="active" href="/wdd230/lesson11/soda_springs.html">Soda Springs</a></li>  
+            <li><a href="/wdd230/lesson11/fish_haven.html">Fish Haven</a></li>
+            <li><a href="/wdd230/lesson11/storm_center.html">Storm Center</a></li>
+            <li><a href="/wdd230/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <main>
+    <h2>Soda Springs</h2>          
+    <div class="content">
+      <div class="image">
+        <picture>
+            <source media="(min-width:575px)" srcset="images/soda_medium.jpg">
+            <source media="(min-width:1200px)" srcset="images/soda_large.jpg">
+            <img src="images/sodasprings.jpg" alt="landscape image"></picture>
+        <div class="summary">
+            <table class="data">
+              <thead>
+                <tr><th>Weather Summary</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Current Temp: <span id="temp"></span>&#176;</td></tr>
+                <tr><td>Wind: <span id="wind"></span></td></tr>
+                <tr><td>Humidity: <span id="humid"></span></td></tr>
+                <tr><td>High Temp: <span id="high"></span>&#176;</td></tr>
+                <tr><td>Low Temp: <span id="low"></span>&#176;</td></tr>
+                <tr><td>Windchill: <span id="chill"></span>&#176;</td></tr>
+              </tbody>
+              <tfoot>
+                <tr><td>Sunset: <span id="time"></span> p.m.</td></tr>
+              </tfoot>
+            </table>
+          </div>
+        </div> 
+        <p id="small">Small</p> 
+        <p id="medium">Medium</p> 
+        <p id="large">Large</p> 
+      </div>  
+ 
+    
+    <div class="forecast">
+      <h2>5-Day Forecast</h2>
+      <table>
+        <tr>
+          <th><span id="days1"></span></th>
+          <th><span id="days2"></span></th>
+          <th><span id="days3"></span></th>
+          <th><span id="days4"></span></th>
+          <th><span id="days5"></span></th>
+        </tr>
+        <tr>
+          <td><img src="#" alt="" id="image1"><span id="desc1"></span><span id="temp1"></span>&deg; F</td>
+          <td><img src="#" alt="" id="image2"><span id="desc2"></span><span id="temp2"></span>&deg; F</td>
+          <td><img src="#" alt="" id="image3"><span id="desc3"></span><span id="temp3"></span>&deg; F</td>
+          <td><img src="#" alt="" id="image4"><span id="desc4"></span><span id="temp4"></span>&deg; F</td>
+          <td><img src="#" alt="" id="image5"><span id="desc5"></span><span id="temp5"></span>&deg; F</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Upcoming Events</h2>
+    <div class="events"></div>
+
+    <div class="article">
+      <h2>Article</h2>
+      <h3>A History of Soda Springs Idaho</h3>
+      <img src="images/sodasprings.jpg" alt="soda springs image">
+      <p>The Oregon Trail passed through Soda Springs. At the time it was known as the 
+        "Oasis of Soda Springs". Between Fort Laramie and Fort Boise, Soda Springs was 
+        a major landmark and is the second oldest settlement in Idaho.[1] Sulphur Springs
+        was the first hot spring that the Oregon Trail immigrants encountered in the soda 
+        springs area. Pyramid springs was discovered by fur trappers and pioneers, they 
+        discovered the springs by noticing mounds of soda formed rock and clay. Johnkirk 
+        Townsends said in his diary, “Our encampment on the 8th was near what are called
+        the’White Clay pits,” still on Bear River. The soil is soft chalk, white and 
+        tenacious: and in the vicinity are several springs of strong super carbonated
+        water which bubble up with all the activity of artificial fountains. The taste
+        was very agreeable and refreshing, resembling Saratoga water but not so saline. 
+        The whole plain to the hills is having depressions on their summits from which 
+        once issued streams of water. The extent of these eruptions, at some former
+        period, must have been very great. At about half a mile distant, is an eruptive 
+        thermal spring of the temperature of 90 [degrees], and near this is an opening 
+        in the earth front which a stream of gas issues without water.”</p>
+    </div>
+
+    <div class="contact">
+      <h2>Contact Information</h2>
+      <img src="images/preston_map.jpg" alt="map of preston">      
+      <p>Joseph Watt</p>
+      <p>208-567-5309</p>
+      <p>wat19030@byui.edu</p> 
+      <p>www.byui.edu.online</p> 
+    </div>
+
+  </main>
+
+  <footer> 
+    <a href="https://www.openweathermap.org">Weather API Credit</a><br>
+    <p id="year"></p><a href="https://www.byui.edu/online">BYUI Online Learning</a>
+    <p id="date"></p>
+  </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/web_font.js"></script>
+<script src="js/footerjava.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/announcement.js"></script>
+<script src="js/soda.js"></script>
+
+</body>
+</html> 

@@ -1,0 +1,9 @@
+/* large css for lesson 1 */
+
+@media only screen and (min-width: 75em){
+
+    footer, header, .center {
+        margin: 0 auto;
+        width: 800px;
+    }
+}

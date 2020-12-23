@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Table Build Assignment for Joseph Watt in WDD230: Web Design and Development Brigham Young University-Idaho">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/wdd230/favicon.ico">
+<link rel="stylesheet" href="/wdd230/lesson8/css/normalize.css">
+<link rel="stylesheet" href="/wdd230/lesson8/css/table_small.css">
+<link rel="stylesheet" href="/wdd230/lesson8/css/table_medium.css">
+<link rel="stylesheet" href="/wdd230/lesson8/css/table_large.css">
+<title>Joseph Watt Table Build for WDD 230</title>
+</head>
+<body>
+
+    <div id="announcement">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. 
+          Saturday at the city park Pavilion.
+        </p>
+    </div>
+ 
+    <header>
+        <img src="/wdd230/lesson8/images/weather.png" alt="profile picture">
+        <h1>What's The Weather?</h1>
+        <h4>"We make sure you have the best weather. . . .report"</h4>       
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="" onclick="menutoggle()">&#9776; Menu</a></li>
+            <li><a href="/wdd230/index.html">Home</a></li>
+            <li><a href="/wdd230/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>  
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="/wdd230/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="/wdd230/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <table>
+        <caption><h2>ACME Wildwest</h2></caption>
+        <thead>
+            <tr>
+                <td>Period</td>
+                <td>Sales</td>
+                <td>Goals</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>August</td>
+                <td>$3,590</td>
+                <td>$4,000</td>
+            </tr>
+            <tr>
+                <td>September</td>
+                <td>$4,420</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>October</td>
+                <td>$4,870</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>November</td>
+                <td>$8,610</td>
+                <td class="change">$7,050</td>
+            </tr>
+            <tr>
+                <td>Black Friday</td>
+                <td colspan="2">$3,200</td>
+            </tr>
+            <tr>
+                <td>December</td>
+                <td>$6,820</td>
+                <td>$7,500</td>
+            </tr> 
+        </tbody>  
+        <tfoot>
+            <tr>
+                <td colspan="3">Compiled 11.4.2020 by JWatt</td>
+            </tr>
+        </tfoot>     
+    </table> 
+   
+    <footer> 
+        <p id="year"></p><a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        <p id="date"></p>
+    </footer>
+
+<script src="/wdd230/lesson7/js/footerjava.js"></script>
+<script src="/wdd230/lesson8/js/menu.js"></script>
+<script src="/wdd230/lesson7/js/announcement.js"></script>
+
+</body>
+</html> 

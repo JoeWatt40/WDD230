@@ -1,0 +1,123 @@
+/* small css for lesson 8 table build */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: lightblue;
+}
+
+#announcement, #display{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+header img {
+    float: right;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid lightgrey;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table, caption {
+    box-shadow: 10px 5px 10px #888888;
+    padding: 10px;
+}
+
+caption {
+    border: 2px solid lightgrey;
+    border-bottom: 0;
+    background-color: #7fb9c2;
+    font-weight: bold;
+}
+
+thead {
+    font-weight: bold;
+}
+
+thead, .change {
+    background-color: #628ca6;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(5) td:nth-child(1) {
+    font-style: italic;
+}
+
+td, th {
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+tbody {
+    background-color: #e7ffed;
+}
+
+tfoot {
+    background-color: #7fb9c2;
+    font-size: 10px;
+}
+
+.navigation li:first-child {
+    text-align: center;
+    display: block; 
+    text-decoration: none;
+}
+
+.active {
+    background-color: lightblue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: none;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.response li {
+    display: block;
+    text-align: center;    
+}
+
+.response nav li {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: lightgrey;
+}
+
+footer a, #year {
+    display: inline-block;
+}

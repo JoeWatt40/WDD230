@@ -1,0 +1,127 @@
+/* small css for lesson 12 */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid black;
+    justify-content: center;
+}
+
+main {
+    background-color: lightblue;
+}
+
+header img {
+    float: right;
+    height: 100px;
+}
+
+div {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+.data, table {
+    margin: 0 auto;
+}
+
+/*navigation*/
+nav {
+    border-top: 1px solid black;
+    padding-top: 10px;
+    background-color: darkgrey;
+}
+
+.navigation li:first-child {
+    text-align: center;
+    display: block;
+    text-decoration: none; 
+}
+
+.navigation {
+    margin: 0;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: none;
+}
+
+nav li a:hover, .active{
+    text-decoration: underline;
+    font-size: 125%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.response li {
+    display: block;
+    text-align: center; 
+    padding: 5px;   
+}
+
+.response nav li {
+    display: block;
+}
+
+nav li {
+    font-weight: bold;
+}
+/*end navigation*/
+dt {
+    font-weight: bold;
+}
+
+dl {
+    text-align: left;
+}
+
+dd {
+    margin: 0;
+}
+
+picture img {
+    width: 175px;
+    height: 125px;
+}
+
+.type {
+    font-weight: bold;
+    text-align: center;
+}
+
+.forecast th, td {
+    background-color: darkgray;
+    border: 1px solid black;
+    padding: 10px;   
+}
+
+.type li {
+    list-style: none;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+footer img {
+    width: 25px;
+    height: 25px;
+}

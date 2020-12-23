@@ -1,0 +1,87 @@
+/* medium css file for lesson 6*/
+
+@media only screen and (min-width: 37.5em){
+    .navigation  li:first-child{
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0 auto;
+    }
+    
+    #small, #large {
+        display: none;
+
+    }
+
+    #medium {
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 400px;
+        width: 100px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .forecast {
+        display: initial;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        background-color: darkgray;
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .article img {
+        display: inline-flex;
+        width: 25%; 
+        float: right;
+    }
+
+    .contact img {
+        display: inline-flex;
+        width: 20%;
+        float: left;
+    }
+
+    .contact p {
+        text-align: right;
+    }
+
+    .response, .navigation li {
+        display: flex;
+        background-color: darkblue;
+        text-align: center; 
+    }
+
+    .navigation {
+        display: flex;
+        background-color: darkblue;
+        text-align: center; 
+    }
+
+    a:hover{
+        text-decoration: underline;
+        background-color: white;
+        color: black;
+    }       
+
+    nav li a {
+        color:white;
+        padding: 10px;
+    }
+
+    header, main, nav, footer {
+        margin: 0 auto;
+        width: 575px;
+    }
+
+}

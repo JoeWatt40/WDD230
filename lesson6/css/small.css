@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#announcement, #display{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+header {
+    display: inline-flexbox;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: lightblue;
+}
+
+header img {
+    float: right;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.content {
+    position: relative;
+}
+
+.summary {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 150px;
+    background-color: white;
+    opacity: 0.4;
+    font-weight: bold;
+}
+
+#small {
+    position: absolute;
+    top: 40px;
+    left: 400px;
+    width: 100px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#medium, #large  {
+    display: none;
+}
+
+.summary p{
+    text-align: left;
+    margin: 0;    
+}
+
+main img {
+    width: 100%;
+}
+
+.article img {
+    display: none;
+}
+
+.forecast {
+    display: none;
+}
+
+.navigation li:first-child {
+    text-align: center;
+    display: block; 
+    text-decoration: none;
+}
+
+.active {
+    background-color: lightblue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: none;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.response li {
+    display: block;
+    text-align: center;    
+}
+
+.response nav li {
+    display: block;
+}
+
+.fish {
+    display: none;
+}
+
+.contact img {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: lightgrey;
+}
+
+footer a #year {
+    display: inline-block;
+}

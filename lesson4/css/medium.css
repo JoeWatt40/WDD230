@@ -1,0 +1,46 @@
+/* medium css file for lesson 4*/
+
+@media only screen and (min-width: 37.5em){
+    .navigation  li:first-child{
+        display: none;
+    }
+
+    nav {
+        display: inline;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav li {
+        display:inline;
+        text-align: center;
+    }
+
+    nav ul {
+        background-color: darkblue;
+    }
+
+    nav li a:hover{
+        text-decoration: underline;
+        background-color: white;
+        color: black;
+    }
+
+    nav li a {
+        color:white;
+        padding: 10px;
+    }
+
+    footer, section {
+        margin: 0 auto;
+        display: block;
+        width: 575px;
+        text-align: center;
+    }
+
+    header {
+        width: 575px;
+        margin: 0 auto;
+    }
+
+}

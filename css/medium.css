@@ -1,0 +1,14 @@
+/* medium css for lesson 1 */
+
+@media only screen and (min-width: 39em){
+
+    footer, header, .center {
+        margin: 0 auto;
+        width: 600px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}

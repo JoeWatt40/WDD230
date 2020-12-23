@@ -1,0 +1,39 @@
+/* medium css for lesson 8 form */
+
+@media only screen and (min-width: 650px) {
+    footer, header, nav {
+        margin: 0 auto;
+        display: block;
+        width: 575px;
+    }
+
+    .navigation  li:first-child{
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0 auto;
+    }
+
+    .response, .navigation li {
+        display: flex;
+        background-color: darkblue;
+        text-align: center; 
+    }
+
+    .navigation {
+        display: flex;
+        background-color: darkblue;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        background-color: white;
+        color: black;
+    }       
+
+    nav li a {
+        color:white;
+        padding: 10px;
+    }
+}

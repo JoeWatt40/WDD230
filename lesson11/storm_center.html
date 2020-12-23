@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Storm Center-Preston Page for Joseph Watt in WDD230: Web Design and Development Brigham Young University-Idaho">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Peddana&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/wdd230/favicon.ico">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+<title>Joseph Watt Storm Center for WDD 230</title>
+</head>
+<body>
+
+    <div id="announcement">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. 
+          Saturday at the city park Pavilion.
+        </p>
+    </div>
+ 
+    <header>
+        <a href="https://joewatt40.github.io/wdd230/"><img src="/wdd230/lesson11/images/weather.png" alt="site logo"></a>
+        <h1>What's The Weather?</h1>
+        <h2>"We make sure you have the best weather. . . .report"</h2>   
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="" onclick="menutoggle()">&#9776; Menu</a></li>
+                <li><a href="/wdd230/lesson11/index.html">Home</a></li>
+                <li><a href="/wdd230/lesson11/preston.html">Preston</a></li>
+                <li><a href="/wdd230/lesson11/soda_springs.html">Soda Springs</a></li>  
+                <li><a href="/wdd230/lesson11/fish_haven.html">Fish Haven</a></li>
+                <li><a class="active" href="/wdd230/lesson11/storm_center.html">Storm Center</a></li>
+                <li><a href="/wdd230/lesson11/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="form">
+        <form action="/wdd230/lesson8/thanks.html">
+
+        <h3>Contact Information</h3>
+        
+        <label for="name">Name: *<br>
+        <input type="text" id="name" name="name" required="required" minlength="5" pattern="[A-Za-z]{-5}"></label><br>
+
+        <label for="email">Email:<br>
+        <input type="email" id="email" name="email" placeholder="name@mail.com"></label><br>
+
+        <label for="number">Phone Number: *<br>
+        <input type="tel" id="number" name="number" required="required"></label><br>
+
+        <label for="zip">Zip Code: *<br>
+        <input type="number" id="zip" name="zip" required="required"></label><br>
+        
+        <h3>Storm Information</h3>
+        
+        <label for="day">Date:<br>
+        <input type="date" id="day" name="day"></label><br>
+
+        <label for="type">Storm Type:<br>
+        <input list="types" id="type" name="type"> 
+        <datalist id="types">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+        </datalist></label><br>   
+
+        <label for="severity">Storm Severity:<br>
+        <input type="number" id="severity" name="severity" min="1" max="10"></label><br>
+
+        <label for="region">Storm Region:<br> 
+        <select id="region" name="region" size="3">
+            <option value="Select Region..." disabled="disabled" selected>Select Region...</option>
+            <option value="Preston">Preston</option>
+            <option value="Soda Springs">Soda Spring</option>
+            <option value="Fish Haven">Fish Haven</option>
+        </select></label><br>
+
+        <p>Are you in danger?</p>
+        <label for="yes">Yes
+        <input type="radio" id="yes" name="yes"></label>
+        <label for="maybe">Maybe
+        <input type="radio" id="maybe" name="maybe"></label>
+        <label for="no">No
+        <input type="radio" id="no" name="no"><br></label>
+        
+        <h3>Additional Information</h3>
+        
+        <label for="userinput"><br>
+        <textarea id="userinput" name="userinput" rows="5" cols="30">
+        </textarea></label><br>
+
+        <input type="submit" value="Submit">
+        
+    </form> 
+    </div> 
+    
+    <footer> 
+        <p id="year"></p><a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        <p id="date"></p>
+    </footer>
+
+<script src="/wdd230/lesson8/js/footerjava.js"></script>
+<script src="/wdd230/lesson8/js/menu.js"></script>
+<script src="/wdd230/lesson8/js/announcement.js"></script>
+
+</body>
+</html> 

@@ -1,0 +1,7 @@
+/* large css for lesson 7 image gallery */
+
+@media only screen and (min-width: 1000px){
+    footer, header, nav{
+        width: 800px;
+    }
+}

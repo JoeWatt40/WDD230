@@ -1,0 +1,23 @@
+/* large css file for lesson 10*/
+
+@media only screen and (min-width: 75em){
+    footer, main, nav, header {
+        width: 800px;
+    }    
+
+    #small, #medium {
+        display: none;
+
+    }
+
+    #large {
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 400px;
+        width: 100px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

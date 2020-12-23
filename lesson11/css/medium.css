@@ -1,0 +1,91 @@
+/* medium css file for lesson 11*/
+
+@media only screen and (min-width: 575px){
+    
+    footer, header, main, nav {
+        margin: 0 auto;
+        display: block;
+        width: 575px;
+        text-align: center;
+    }
+
+    .content img {
+        width: 100%;
+    }
+    /*hero image css*/
+    #small, #large {
+        display: none;
+
+    }
+
+    #medium {
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 400px;
+        width: 100px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    /*end hero image css*/
+    /*card css*/
+    .cards section  {
+        display: flex;  
+        flex-direction: row; 
+        padding: 10px;    
+    }
+
+    .cards section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    /*end card css*/
+
+    .contact img {
+        display: inline-flex;
+        width: 20%;
+        float: left;
+    }
+
+    .contact p {
+        text-align: right;
+    }
+
+    .article img {
+        display: inline-flex;
+        float: right;
+    }
+
+    .navigation  li:first-child{
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0 auto;
+    }
+
+    .response, .navigation li {
+        display: flex;
+        text-align: center; 
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }       
+
+    nav li a {
+        color:black;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    #column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

@@ -1,0 +1,36 @@
+/* small css file for lesson 2 */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: lightblue;
+}
+
+h1 {
+    font-style: italic;
+}
+
+#first, #second, #third {
+    background-color:lightgrey;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+h3, a{
+    padding: 10px;
+    font-style: italic;
+}
+
+p {
+    padding: 10px; 
+}
+
+img {
+    width: 95%;
+    padding: 10px;
+}
